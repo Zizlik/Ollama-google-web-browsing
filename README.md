@@ -7,7 +7,7 @@ This repository provides a Python script that integrates Google Custom Search an
 - **Google Custom Search:** Perform searches using Google's Custom Search API.
 - **Ollama Chat:** Chat with the Ollama model to process and respond to user queries.
 - **Interactive Command-Line Interface:** Continuously interact with the script via the command line.
-- **Ollama Model Testing: Test the Ollama model's capabilities with a dedicated script.
+- **Ollama Model Testing:** Test the Ollama model's capabilities with a dedicated script.
 
 ## Prerequisites
 
