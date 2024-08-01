@@ -1,4 +1,4 @@
-# Google and Ollama Chat Integration
+# Ollama-Google-Web-Browsing
 
 This repository provides a Python script that integrates Google Custom Search and Ollama's chat functionality. The script allows users to type messages, perform Google searches, and interact with the Ollama chat model to process search results or answer queries.
 
@@ -8,18 +8,32 @@ This repository provides a Python script that integrates Google Custom Search an
 - **Ollama Chat:** Chat with the Ollama model to process and respond to user queries.
 - **Interactive Command-Line Interface:** Continuously interact with the script via the command line.
 
-## Requirements
+## Prerequisites
 
-- Python 3.6 or later
-- `requests` library
-- `ollama` library
+To use this project, you'll need to set up the following:
+
+- **Google API Key:** For accessing the Google Custom Search API.
+- **Ollama API:** For processing and generating conversational responses.
+
+### How to Obtain Google API Key
+1. Visit the [Google Cloud Console](https://console.cloud.google.com/).
+2. Create a new project or select an existing one.
+3. Enable the "Custom Search API" under the "APIs & Services" section.
+4. Go to "Credentials" and create an API key.
+5. Copy the API key and paste it into the `api_key` variable in the code.
+
+### How to Obtain Ollama API Access
+1. Visit the [Ollama API Documentation](https://ollama.com/docs/).
+2. Sign up or log in to your Ollama account.
+3. Create an API client and obtain the necessary credentials.
+4. Use the provided credentials to set up the `ollama.Client()` in the code.
 
 ## Setup
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/username/repository.git
-    cd repository
+    git clone https://github.com/Zizlik/Ollama-google-web-browsing.git
+    cd Ollama-google-web-browsing
     ```
 
 2. **Install the required libraries:**
@@ -27,11 +41,7 @@ This repository provides a Python script that integrates Google Custom Search an
     pip install requests ollama
     ```
 
-3. **Obtain Google Custom Search API key and Search Engine ID:**
-    - Sign up for Google Custom Search API and generate an API key.
-    - Create a custom search engine and obtain the Search Engine ID.
-
-4. **Update the script with your API credentials:**
+3. **Update the script with your API credentials:**
     ```python
     # Google API account
     api_key = "YOUR_API_KEY"
@@ -42,7 +52,7 @@ This repository provides a Python script that integrates Google Custom Search an
 
 1. **Run the script:**
     ```sh
-    python script_name.py
+    python Ollama_Google.py
     ```
 
 2. **Interact with the script:**
